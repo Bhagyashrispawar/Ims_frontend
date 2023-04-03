@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $("#horizontal-tiles").load("./../../templates/dashboard/horizontal-tiles/horizontal-tiles.html");
     $("#sec-distribution").load("./../../templates/sec-distribution/sec-distribution.html");
+    
     //  loadLineChart();
     $("#r1").on('change', function() {
         getSpecificHomeConsumptionData($(this).find(":selected").val());

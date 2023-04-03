@@ -4,4 +4,5 @@ $(document).ready(function() {
     });
     $("#left-sidebar").load("./../../templates/left-sidebar/left-sidebar.html");
     $("#layoutSidenav_content").load("./../../templates/dashboard/dashboard.html");
+    $("#ITTRequest_content").load("./../../templates/ITTRequest/ITTRequest.html");
 });
