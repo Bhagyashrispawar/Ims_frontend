@@ -25,3 +25,14 @@ body {
 body.dark-theme {
     background-color: #f4f4f4;
 }
+.side_main.active{
+    margin-left: auto;
+    width: calc(100% - 270px);
+    padding: 10px;
+    transition: all 0.5s;
+}
+.side_main{
+    padding: 10px;
+    width: 100%;
+    transition: all 0.5s;
+}
