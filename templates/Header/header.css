@@ -1,0 +1,8 @@
+.navbar.navbar-default {
+    background-color: #fff;
+    height: 42px;
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}

@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Signika-Medium';
+    src: url('../../assets/fonts/Signika-Medium.ttf');
+    src: url('../../assets/fonts/Signika-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Signika-Light';
+    src: url('../../assets/fonts/Signika-Light.ttf');
+    src: url('../../assets/fonts/Signika-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body * {
+    font-family: 'Signika-Light';
+}
+
+body {
+    margin-top: 42px;
+}
+
+body.dark-theme {
+    background-color: #f4f4f4;
+}

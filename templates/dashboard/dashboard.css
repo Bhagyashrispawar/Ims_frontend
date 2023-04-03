@@ -1,0 +1,25 @@
+/* Row Title Related CSS */
+
+.card .title .col-md-2 #Ton {
+    margin: 18px -5px;
+}
+
+.card .title .col-md-2 #Gcal {
+    margin: 15px 5px;
+}
+
+.canvasjs-chart-credit {
+    display: none;
+}
+#fromHome{
+    max-width: 109px;
+    font-size: 9px;
+}
+#toHome{
+    max-width: 109px;
+    font-size: 9px;
+}
+#r1{
+    max-width: 109px;
+    font-size: 9px;
+}
