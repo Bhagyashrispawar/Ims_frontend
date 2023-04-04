@@ -1,6 +1,6 @@
 [
     {
-        "name": "No Sequence of RAIL Cargo Unloading Accourting",
+        "name": "WorkFlow 1",
         "numberIndex": "first",
         "items": [
             {
@@ -34,7 +34,7 @@
         ]
     },
     {
-        "name": "ITT Sequence",
+        "name": "WorkFlow 2",
         "numberIndex": "second",
         "items": [
             {
@@ -56,29 +56,18 @@
         ]
     },
     {
-        "name": "Sequence of Truck Cargo Unloading for ETHANOL/Bio",
+        "name": "WorkFlow 3",
         "numberIndex": "third",
         "items": [
             {
                 "name": "Unloading of Cargo document need to be filled",
                 "link": ""
-            }
-        ]
-    },
-    {
-        "name": "Sequence for Sick Tanker Unloading",
-        "numberIndex": "froth",
-        "items": [
+            },
+       
             {
                 "name": "In case Manual Stock transfer from vehicle",
                 "link": ""
-            }
-        ]
-    },
-    {
-        "name": "Some Master screen/UI required",
-        "numberIndex": "fifth",
-        "items": [
+            },
             {
                 "name": "Master UI for storing of surveyor master, used in UI no 4",
                 "link": ""
@@ -97,4 +86,5 @@
             }
         ]
     }
+    
 ]
