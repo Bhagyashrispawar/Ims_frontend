@@ -8,4 +8,6 @@ $(document).ready(function() {
     $("#PhysicalGaugingReport_content").load("./../../templates/PhysicalGaugingReport/PhysicalGaugingReport.html");
     $("#RakeOTRSummary_content").load("./../../templates/RakeOTRSummary/RakeUnloadingSummary.html");
     $("#ITTSummary_content").load("./../../templates/ITTSummary/ITTSummary.html");
+    $("#UnloadingCargo_content").load("./../../templates/UnloadingofCargo/UnloadingCargo.html");
+
 });
