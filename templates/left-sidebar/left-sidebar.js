@@ -8,6 +8,8 @@ $(document).ready(function() {
             $('#control-icon').removeClass('fa-caret-left');
             $('#control-icon').addClass('fa-caret-right');
         }
+        $(".side_main").toggleClass('active');
+     
 
     });
 
