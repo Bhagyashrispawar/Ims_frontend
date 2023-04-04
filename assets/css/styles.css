@@ -18,9 +18,7 @@ body * {
     font-family: 'Signika-Light';
 }
 
-body {
-    margin-top: 42px;
-}
+
 
 body.dark-theme {
     background-color: #f4f4f4;
