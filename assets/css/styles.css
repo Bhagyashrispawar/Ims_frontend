@@ -1,41 +1,149 @@
 @font-face {
-    font-family: 'Signika-Medium';
-    src: url('../../assets/fonts/Signika-Medium.ttf');
-    src: url('../../assets/fonts/Signika-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Signika-Medium';
+  src: url('../../assets/fonts/Signika-Medium.ttf');
+  src: url('../../assets/fonts/Signika-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Signika-Light';
-    src: url('../../assets/fonts/Signika-Light.ttf');
-    src: url('../../assets/fonts/Signika-Light.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Signika-Light';
+  src: url('../../assets/fonts/Signika-Light.ttf');
+  src: url('../../assets/fonts/Signika-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body * {
-    font-family: 'Signika-Light';
+  font-family: 'Signika-Light';
 }
 
 
 
 body.dark-theme {
-    background-color: #f4f4f4;
+  background-color: #f4f4f4;
 }
-.side_main.active{
-    margin-left: auto;
-    width: calc(100% - 270px);
-    padding: 10px;
-    transition: all 0.5s;
+
+.side_main {
+  padding: 10px;
+  width: 100%;
+  margin-top: 30px;
 }
-.side_main{
-    padding: 10px;
-    width: 100%;
-    transition: all 0.5s;
-}
+
 .background {
 
+
+  background: rgb(201, 199, 199);
+
+}
+
+.box_line {
+
+  border: 0.48vh solid black;
+  padding: 20px;
+
+}
+
+hr.new {
+  border: 0.16vh solid black;
+  margin-top: 2.4vh;
+
+}
+
+button {
+  background-color: white;
+  border: 0.16vh solid #999;
+  /* set border to grey */
+  border-radius: 1.6vh;
+  color: black;
+  /* set text color */
+  cursor: pointer;
+  /* change cursor to pointer on hover */
+}
+
+
+
+
+.text {
+
+  border-radius: 0px;
+  border: 0.16vh solid #f0657c;
+  background-color: rgb(248, 248, 152);
+  border-collapse: collapse;
+  text-align: center;
+  width: 25vh;
+
+}
+
+.text1 {
+  border-radius: 0px;
+  border: 0.16vh solid #f0657c;
+  background-color: white;
+  text-align: center;
+  width: 20vh;
+
+
+}
+
+
+.column {
+  float: left;
+
+  padding-left: 16vh;
+}
+
+.text2 {
+
+  border: 0.16vh solid #f0657c;
+
+}
+
+
+/* RCN GENERATION */
+.MainBox {
+  border: 2px solid #000;
+  /* padding: 15px; */
+}
+
+.mainheading {
+  border-bottom: 2px solid #000;
+  text-align: center;
+  text-transform: uppercase;
+}
+.mainheading h3{
+  font-size: 16px;
+  font-weight: bold;
+
+}
+.MainBox .top_heading{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.MainBox .top_heading button{
+  border: 1px solid #999;
+  background-color: #fff;
+  padding: 2px 15px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.MainBox .top_heading button span{
+  width: 10px;
+  display: block;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.MainBox .box .form-controls{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+=======
     background: rgb(201, 199, 199);
   
   }
