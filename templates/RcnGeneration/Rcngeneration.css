@@ -1,0 +1,83 @@
+/* RCN GENERATION */
+.MainBox {
+    border: 2px solid #000;
+    /* padding: 15px; */
+}
+
+.mainheading {
+    border-bottom: 2px solid #000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.mainheading h3 {
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.MainBox .top_heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.MainBox .top_heading button {
+    border: 1px solid #999;
+    background-color: #fff;
+    padding: 2px 15px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.MainBox .top_heading button span {
+    width: 10px;
+    display: block;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+
+.MainBox .box .form-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.MainBox .box .form-controls .bg-yellow {
+    background-color: #FFFF99;
+}
+
+
+.MainBox .box .form-controls select {
+    padding: 5px;
+    width: 100%;
+    border-radius: 0;
+    text-align: center;
+    background-color: #00FFFF;
+}
+
+.MainBox .box .form-controls select option {
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.box-table{
+    display: flex;
+}
+.box-table .departsection{
+    display: flex;
+    flex-direction: column;
+}
+.box-table .info {
+    display: flex;
+    flex-direction: column;
+}
+.box-table .departsection h4{
+    font-size: 16px;
+    font-weight: bold;
+}
