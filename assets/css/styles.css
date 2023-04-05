@@ -23,6 +23,15 @@ body * {
 body.dark-theme {
   background-color: #f4f4f4;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 .side_main {
   padding: 10px;
@@ -99,14 +108,55 @@ button {
 }
 
 
-/* RCN GENERATION */
-.MainBox {
-  border: 2px solid #000;
-  /* padding: 15px; */
+/* Media  for rcn generation*/
+@media (max-width:960px) {
+  .MainBox .box .form-controls>div {
+    flex-direction: column;
+  }
 }
 
-.mainheading {
-  border-bottom: 2px solid #000;
+.box_line {
+
+  border: 0.48vh solid black;
+  padding: 20px;
+
+}
+
+hr.new {
+  border: 0.16vh solid black;
+  margin-top: 2.4vh;
+
+}
+
+button {
+  background-color: white;
+  border: 0.16vh solid #999;
+  /* set border to grey */
+  border-radius: 1.6vh;
+  color: black;
+  /* set text color */
+  cursor: pointer;
+  /* change cursor to pointer on hover */
+}
+
+
+
+
+.text {
+
+  border-radius: 0px;
+  border: 0.16vh solid #f0657c;
+  background-color: rgb(248, 248, 152);
+  border-collapse: collapse;
+  text-align: center;
+  width: 25vh;
+
+}
+
+.text1 {
+  border-radius: 0px;
+  border: 0.16vh solid #f0657c;
+  background-color: white;
   text-align: center;
   text-transform: uppercase;
 }
@@ -216,6 +266,7 @@ button {
   background-color: white;
   text-align: center;
   width: 20vh;
+
 
 
 }
