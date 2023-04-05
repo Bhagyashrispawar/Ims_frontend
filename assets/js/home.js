@@ -7,7 +7,7 @@ $(document).ready(function() {
     $("#RakeOTRSummary_content").load("./../../templates/RakeOTRSummary/RakeUnloadingSummary.html");
     $("#ITTSummary_content").load("./../../templates/ITTSummary/ITTSummary.html");
 
-    $("#rcnGeneration_content").load("./../../templates/RcnGeneration/index.html");
+    $("#rcnGeneration_content").load("./../../templates/RcnGeneration/Rcngeneration.html");
 
     $("#UnloadingCargo_content").load("./../../templates/UnloadingofCargo/UnloadingCargo.html");
 
