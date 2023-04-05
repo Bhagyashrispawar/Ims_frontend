@@ -8,11 +8,13 @@
 
 .header_list {
     display: flex;
-    gap: 3px;
+    gap:  40vh;padding-left: 27px;
+
 }
 
 .dropdown-btn:focus {
     border-color: transparent !important;
+    background-color: cyan;
 }
 
 .dropdown-btn {
@@ -21,6 +23,8 @@
     align-items: center;
     gap: 3px;
     padding: 5px;
+    background-color: cyan;
+
     /* display: inline-block;
     width: 180px;
     white-space: nowrap;
@@ -30,10 +34,15 @@
 
 .dropdown-menu .dropdown-item {
     font-size: 13px;
+     
 }
+    
+
+
 
 .dropdown-btn:hover {
     border: 1px solid;
+    background-color: cyan;
 }
 
 @media (max-width:768px) {
@@ -41,3 +50,4 @@
         flex-direction: column;
     }
 }
+
