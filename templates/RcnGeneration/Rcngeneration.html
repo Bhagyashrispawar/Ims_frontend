@@ -1,0 +1,162 @@
+<script src="./../../templates/RcnGeneration/Rcngeneration.js"></script>
+
+<main>
+    <div class="container">
+        <div class="col-md-10 mx-auto">
+
+            <div class="MainBox">
+                <div class="mainheading">
+                    <h3 class="mt-2">rcn generation</h3>
+                </div>
+                <div class="row py-3">
+                    <div class="col-md-11 mx-auto">
+                        <div class="top_heading">
+                            <div class="d-flex gap-2">
+                                <button onclick="clearData()">clear</button>
+                                <button>delete</button>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button><span></span> close</button>
+                                <button> Report</button>
+                                <button onclick="saveFormdata()">save</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-11 ms-auto">
+                        <form action="" id="submithandler">
+                            <div class="box py-3">
+                                <div class="form-controls mb-3">
+                                    <label for="" class="col-md-2 text-end">RCN </label>
+                                    <div class="d-flex">
+                                        <input type="text" id="rcnNo" class="bg-yellow" oninput="checking()">
+                                        <input type="datetime-local" id="rcnDate" class="bg-yellow">
+                                    </div>
+                                    <span id="errorRcn"></span>
+                                </div>
+                                <div class="form-controls mb-3">
+                                    <label for="" class="col-md-2 text-end">Supplier </label>
+                                    <div class="d-flex col-md-2">
+
+                                        <select name="plan" id="supplier">
+                                            <option value="none" selected disabled hidden></option>
+                                            <option value="free">Rif</option>
+                                            <option value="starter">NAYARA </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-controls">
+                                    <label for="" class="col-md-2 text-end">RR No & Date </label>
+                                    <div class="d-flex">
+                                        <input type="text" id="prfdate">
+                                        <input type="datetime-local" id="prtdate">
+                                    </div>
+                                </div>
+                                <div class="form-controls mb-3">
+                                    <label for="" class="col-md-2 text-end">FNR No & Date </label>
+                                    <div class="d-flex">
+                                        <input type="text" id="fdate">
+                                        <input type="datetime-local" id="tdate">
+                                    </div>
+                                    <div class="form-controls ms-auto">
+                                        <label for="">Nos of Sick Wagon</label>
+                                        <div class="d-flex">
+                                            <input type="text" id="nossicke">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="form-controls mb-3">
+                                    <label for="" class="col-md-2 text-end">RR Qty in MTs </label>
+                                    <div class="d-flex">
+                                        <input type="text" id="qty">
+                                    </div>
+                                </div>
+                                <div class="form-controls mb-3">
+                                    <label for="" class="col-md-2 text-end">Product </label>
+                                    <div class="d-flex col-md-2">
+                                        <select name="" id="" class="w-100">
+                                            <option value="">MS</option>
+                                            <option value="">HSD</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-controls align-items-end">
+                                    <label for="" class="col-md-2 fw-bold text-end">Natural KL </label>
+                                    <div class="d-flex">
+
+                                        <div class="d-flex flex-column col-md-2 gap-2">
+                                            <label for="b" class="fw-bold">Departure Qty</label>
+                                            <input type="text" id="ndepartment" oninput="depcalculate()">
+                                        </div>
+                                        <div class="d-flex flex-column col-md-2 gap-2">
+                                            <label for="b" class="fw-bold">Arrival Qty</label>
+                                            <input type="text" id="narrival" oninput="depcalculate()">
+                                        </div>
+                                        <div class="d-flex flex-column col-md-2 gap-2">
+                                            <label for="b" class="fw-bold">Difference</label>
+                                            <input type="text" id="ndeff" disabled class="bg-yellow">
+                                        </div>
+                                        <div class="d-flex flex-column col-md-2 gap-2">
+                                            <label for="b" class="fw-bold">Difference in %</label>
+                                            <input type="text" id="ndeffper" disabled class="bg-yellow">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form-controls position-relative">
+                                    <label for="" class="col-md-2 fw-bold text-end">KL @ 15 </label>
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-column col-md-2 gap-2">
+
+                                            <input type="text" id="kdepartment" oninput="klcalculate()">
+                                        </div>
+                                        <div class="d-flex flex-column col-md-2 gap-2">
+
+                                            <input type="text" id="karrival" oninput="klcalculate()">
+                                        </div>
+                                        <div class="d-flex flex-column col-md-2 gap-2">
+
+                                            <input type="text" id="kdeff" disabled class="bg-yellow">
+                                        </div>
+                                        <div class="d-flex flex-column col-md-2 gap-2">
+
+                                            <input type="text" id="kdeffper" disabled class="bg-yellow">
+                                        </div>
+                                        <div class="form-controls position-absolute end-0">
+                                            <label for="">Nos of Sick Wagon</label>
+                                            <div class="d-flex">
+                                                <input type="text" id="nowagon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-controls">
+                                    <label for="" class="col-md-2 fw-bold text-end">In Mts </label>
+                                    <div class="d-flex">
+                                        <div class="d-flex flex-column col-md-2 gap-2">
+
+                                            <input type="text" id="idepartment" oninput="mitcalculate()">
+                                        </div>
+                                        <div class="d-flex flex-column col-md-2 gap-2">
+
+                                            <input type="text" id="iarrival" oninput="mitcalculate()">
+                                        </div>
+                                        <div class="d-flex flex-column col-md-2 gap-2">
+
+                                            <input type="text" id="ideff" disabled class="bg-yellow">
+                                        </div>
+                                        <div class="d-flex flex-column col-md-2 gap-2">
+
+                                            <input type="text" id="ideffper" disabled class="bg-yellow">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
