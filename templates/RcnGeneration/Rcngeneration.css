@@ -48,7 +48,7 @@
     gap: 10px;
 }
 
-.MainBox .box .form-controls .bg-yellow {
+.MainBox .box  .bg-yellow {
     background-color: #FFFF99;
 }
 
@@ -80,4 +80,13 @@
 .box-table .departsection h4{
     font-size: 16px;
     font-weight: bold;
+}
+
+.box .remark h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+.box .remark .remarkBox{
+    border: 2px solid #385D8A;
+    padding: 20px;
 }

@@ -49,13 +49,13 @@ input[type=number] {
 .box_line {
 
   border: 0.48vh solid black;
-  padding: 20px;
+  padding: 10px;
 
 }
 
 hr.new {
   border: 0.16vh solid black;
-  margin-top: 2.4vh;
+  margin-top: 0.4vh;
 
 }
 
@@ -81,6 +81,8 @@ button {
   border-collapse: collapse;
   text-align: center;
   width: 25vh;
+  font-size: 13px;
+  padding: 0;
 
 }
 
@@ -90,7 +92,7 @@ button {
   background-color: white;
   text-align: center;
   width: 20vh;
-
+font-size: 13px;
 
 }
 
@@ -115,18 +117,8 @@ button {
   }
 }
 
-.box_line {
 
-  border: 0.48vh solid black;
-  padding: 20px;
 
-}
-
-hr.new {
-  border: 0.16vh solid black;
-  margin-top: 2.4vh;
-
-}
 
 button {
   background-color: white;
@@ -222,18 +214,8 @@ button {
   }
 }
 
-.box_line {
 
-  border: 0.48vh solid black;
-  padding: 20px;
 
-}
-
-hr.new {
-  border: 0.16vh solid black;
-  margin-top: 2.4vh;
-
-}
 
 button {
   background-color: white;
