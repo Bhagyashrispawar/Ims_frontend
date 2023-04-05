@@ -5,7 +5,28 @@ $(document).ready(function () {
     document.getElementById('prtdate').value = now.toISOString().slice(0, 16);
     document.getElementById('tdate').value = now.toISOString().slice(0, 16);
 
+
+
 });
+
+function exportPdf (){
+    window.onload = function () {
+        document.getElementById("download")
+            .addEventListener("click", () => {
+                const invoice = this.document.getElementById("output");
+                console.log(invoice);
+                console.log(window);
+                var opt = {
+                    margin: 0.5,
+                    filename: 'record.pdf',
+                    image: { type: 'jpeg', quality: 1 },
+                    html2canvas: { scale: 2 },
+                    jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+                };
+                html2pdf().from(invoice).set(opt).save();
+            })
+    }
+}
 
 var rceNo = $("#rcnNo").val();
 var rcnDate = $("#rcnDate").val();
@@ -38,30 +59,37 @@ function depcalculate() {
     var ndepart = document.getElementById('ndepartment').value || 0;
     var narrival = document.getElementById('narrival').value || 0;
     var ndeff = document.getElementById('ndeff');
+    // Addition
     var departResult = parseInt(ndepart) + parseInt(narrival);
     ndeff.value = departResult;
+    //  Percentage
+    var perd = ((ndepart/narrival) * 100).toFixed(3);
+    $('#ndeffper').val(perd + '%');
 }
 function klcalculate() {
     // kl and 15
     var kdepart = document.getElementById('kdepartment').value || 0;
     var karrival = document.getElementById('karrival').value || 0;
     var kdeff = document.getElementById('kdeff');
+    // Addition
     var klResult = parseInt(kdepart) + parseInt(karrival);
     kdeff.value = klResult;
+    // Percentage
+    var perk = ((kdepart/karrival) * 100).toFixed(3);
+    $('#kdeffper').val(perk + '%');
 }
 function mitcalculate() {
     // In mits
     var idepart = document.getElementById('idepartment').value || 0;
     var iarrival = document.getElementById('iarrival').value || 0;
     var ideff = document.getElementById('ideff');
+    // Addtion
     var mitsResult = parseInt(idepart) + parseInt(iarrival);
     ideff.value = mitsResult;
+    // Percentage
+    var perm = ((idepart/iarrival) * 100).toFixed(3);
+    $('#ideffper').val(perm + '%');
 
-
-
-    // var ndeffper = ((parseInt(ndeffper) / parseInt(narrival)) * 100).toFixed(3);
-    // console.log(ndeffper);
-    // $('#ndeffper').val(ndeffper);
 }
 
 // function checking() {
