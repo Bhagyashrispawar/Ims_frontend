@@ -158,7 +158,115 @@ button {
   border: 0.16vh solid #f0657c;
   background-color: white;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.mainheading h3 {
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+.MainBox .top_heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.MainBox .top_heading button {
+  border: 1px solid #999;
+  background-color: #fff;
+  padding: 2px 15px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.MainBox .top_heading button span {
+  width: 10px;
+  display: block;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+
+.MainBox .box .form-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.MainBox .box .form-controls .bg-yellow{
+  background-color: #FFFF99;
+}
+
+
+.MainBox .box .form-controls select{
+  padding: 5px;
+  width: 100%;
+  border-radius: 0;
+  text-align: center;
+  background-color: #00FFFF;
+}
+.MainBox .box .form-controls select option{
+  background-color: #fff;
+  border-radius: 0;
+}
+
+/* Media  for rcn generation*/
+@media (max-width:960px) {
+  .MainBox .box .form-controls>div{
+    flex-direction: column;
+  }
+}
+
+.box_line {
+
+  border: 0.48vh solid black;
+  padding: 20px;
+
+}
+
+hr.new {
+  border: 0.16vh solid black;
+  margin-top: 2.4vh;
+
+}
+
+button {
+  background-color: white;
+  border: 0.16vh solid #999;
+  /* set border to grey */
+  border-radius: 1.6vh;
+  color: black;
+  /* set text color */
+  cursor: pointer;
+  /* change cursor to pointer on hover */
+}
+
+
+
+
+.text {
+
+  border-radius: 0px;
+  border: 0.16vh solid #f0657c;
+  background-color: rgb(248, 248, 152);
+  border-collapse: collapse;
+  text-align: center;
+  width: 25vh;
+
+}
+
+.text1 {
+  border-radius: 0px;
+  border: 0.16vh solid #f0657c;
+  background-color: white;
+  text-align: center;
   width: 20vh;
+
 
 
 }
