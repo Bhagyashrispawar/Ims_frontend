@@ -14,7 +14,8 @@
 
 .dropdown-btn:focus {
     border-color: transparent !important;
-    background-color: cyan;
+    background-color: #fff;
+
 }
 
 .dropdown-btn {
@@ -23,7 +24,7 @@
     align-items: center;
     gap: 3px;
     padding: 5px;
-    background-color: cyan;
+    background-color: #fff;
 
     /* display: inline-block;
     width: 180px;
@@ -42,7 +43,8 @@
 
 .dropdown-btn:hover {
     border: 1px solid;
-    background-color: cyan;
+    background-color: #fff;
+
 }
 
 @media (max-width:768px) {
