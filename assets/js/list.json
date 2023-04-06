@@ -91,7 +91,7 @@
         "items": [
             {
                 "name": "Suplier master",
-                "link": ""
+                "link": "SupplierMasterMain.html"
             },
             {
                 "name": "Product master",
@@ -115,7 +115,7 @@
             },
             {
                 "name": "Pipeline master",
-                "link": "/Mastertablemain/PipelinevolumnMain.html"
+                "link": "PipelinevolumnMain.html"
             },
             {
                 "name": "Tank Calibration master",
