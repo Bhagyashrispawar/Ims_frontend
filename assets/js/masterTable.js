@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $("#nav").load("./../../templates/Header/header.html", function () { });
-    $("#pipelineTable").load("./../../templates/Mastertablesub/PipelineVolumeMaster.html");
+    $("#pipelineTable").load("./../../templates/Mastertablesub/PipelineVolume.html");
     $("#productTable").load("./../../templates/Mastertablesub/ProductMaster.html");
     $("#pumpTable").load("./../../templates/Mastertablesub/PumpMaster.html");
     $("#supplierTable").load("./../../templates/Mastertablesub/SupplierMaster.html");
