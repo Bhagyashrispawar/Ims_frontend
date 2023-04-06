@@ -45,15 +45,18 @@
     background-color: #fff;
 }
 
-.tableData table tbody tr td{
-    padding: 2px;
+.tableData table tbody tr td {
+    padding: 0px;
     font-size: 14px;
 }
+
 .tableData table thead th {
     text-align: center;
     font-size: 15px;
+    text-transform: capitalize;
 }
-.tableData table tbody tr td:nth-child(5){
+
+.tableData table tbody tr td:nth-child(5) {
     padding: 0;
 }
 
@@ -68,4 +71,23 @@
 .tableData table tbody tr td select option {
     background-color: #fff;
     border-radius: 0;
+}
+
+.tableData button {
+    border: 1px solid #999;
+    background-color: #fff;
+    padding: 2px 15px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tableData input{
+    width: 100%;
+    border: 0;
+}
+.tableData input:focus{
+    border: 0;
 }
