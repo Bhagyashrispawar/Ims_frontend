@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $("#pipelineTable").load("./../../templates/UnloadingofCargo/UnloadingCargo.html");
+    $("#pipelineTable").load("./../../templates/Mastertablesub/pipelinevolumn.html");
 
 
 });
