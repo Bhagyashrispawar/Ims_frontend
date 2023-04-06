@@ -48,7 +48,7 @@
     gap: 10px;
 }
 
-.MainBox .box  .bg-yellow {
+.MainBox .box .bg-yellow {
     background-color: #FFFF99;
 }
 
@@ -66,27 +66,31 @@
     border-radius: 0;
 }
 
-.box-table{
+.box-table {
     display: flex;
 }
-.box-table .departsection{
+
+.box-table .departsection {
     display: flex;
     flex-direction: column;
 }
+
 .box-table .info {
     display: flex;
     flex-direction: column;
 }
-.box-table .departsection h4{
+
+.box-table .departsection h4 {
     font-size: 16px;
     font-weight: bold;
 }
 
-.box .remark h4{
+.box .remark h4 {
     font-size: 16px;
     font-weight: 500;
 }
-.box .remark .remarkBox{
+
+.box .remark .remarkBox {
     border: 2px solid #385D8A;
-    padding: 20px;
+    padding: 10px;
 }

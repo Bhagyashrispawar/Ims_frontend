@@ -46,8 +46,8 @@
 }
 
 .tableData table tbody tr td, .tableData table tfoot tr td {
-    padding: 0px;
-    font-size: 14px;
+    padding: 2px;
+    font-size: 15px;
 }
 
 .tableData table thead th {

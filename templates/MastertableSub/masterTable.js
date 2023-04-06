@@ -1,9 +1,34 @@
 $(document).ready(function () {
+
+    // Date object
+    $(".dateCurrent").val(new Date().toJSON().slice(0, 10));
+
+    console.log(true && true && false);
 });
+// alert
+// var successAddition
+// function confirmdata() {
+
+//     $.confirm({
+//         title: 'Confirm!',
+//         content: 'Are you sure to add data?',
+//         buttons: {
+//             confirm: function () {
+//                 $.alert('Confirmed!');
+//                 successAddition = "success";
+//             },
+//             cancel: function () {
+//                 $.alert('Canceled!');
+//             },
+
+//         }
+//     });
+// }
+// console.log(successAddition);
 function savedata() {
     //Loop through the Table rows and build a JSON array.
     var customers = new Array();
-    $("#tblCustomers tbody tr").each(function () {
+    $("#pipelineTable tbody tr").each(function () {
         var row = $(this);
         var customer = {};
         customer.type = row.find("TD").eq(0).html();
@@ -18,8 +43,8 @@ function savedata() {
         customer.calibration_due = row.find("TD").eq(9).html();
         customer.remarks = row.find("TD").eq(10).html();
         customers.push(customer);
+
     });
-    console.log(customers);
 
 }
 
@@ -40,75 +65,85 @@ function btnAdd() {
     var inputRemark = $("#remark")
 
     //Get the reference of the Table's TBODY element.
-    var tBody = $("#tblCustomers > TBODY")[0];
+    var tBody = $("#pipelineTable > TBODY")[0];
 
-    //Add Row.
-    var row = tBody.insertRow(-1);
+    if (inputType.val() !== '' && inputCode.val() !== ''
+        && inputDescription.val() !== ''
+        && inputHeigth.val() !== ''
+        && inputDi.val() !== '' && inputLength.val() !== '' && inputVolumn.val() !== '' &&
 
-    //Add Type cell.
-    var cell = $(row.insertCell(-1));
-    cell.html(inputType.val());
+        inputRemark.val() !== '') {
+        //Add Row.
+        var row = tBody.insertRow(-1);
 
-    //Add Code cell.
-    cell = $(row.insertCell(-1));
-    cell.html(inputCode.val());
+        //Add Type cell.
+        var cell = $(row.insertCell(-1));
+        cell.html(inputType.val());
 
-    //Add Description cell.
-    cell = $(row.insertCell(-1));
-    cell.html(inputDescription.val());
+        //Add Code cell.
+        cell = $(row.insertCell(-1));
+        cell.html(inputCode.val());
 
-    //Add height cell.
-    cell = $(row.insertCell(-1));
-    cell.html(inputHeigth.val());
+        //Add Description cell.
+        cell = $(row.insertCell(-1));
+        cell.html(inputDescription.val());
 
-    //Add dim cell.
-    cell = $(row.insertCell(-1));
-    cell.html(inputDi.val());
+        //Add height cell.
+        cell = $(row.insertCell(-1));
+        cell.html(inputHeigth.val());
 
-    //Add lenght cell.
-    cell = $(row.insertCell(-1));
-    cell.html(inputLength.val());
+        //Add dim cell.
+        cell = $(row.insertCell(-1));
+        cell.html(inputDi.val());
 
-    //Add VOLUMN cell.
-    cell = $(row.insertCell(-1));
-    cell.html(inputVolumn.val());
+        //Add lenght cell.
+        cell = $(row.insertCell(-1));
+        cell.html(inputLength.val());
 
-    //Add lastca cell.
-    cell = $(row.insertCell(-1));
-    cell.html(inputLastca.val());
+        //Add VOLUMN cell.
+        cell = $(row.insertCell(-1));
+        cell.html(inputVolumn.val());
 
-    //Add calibration Upto cell.
-    cell = $(row.insertCell(-1));
-    cell.html(inputCaliUpto.val());
+        //Add lastca cell.
+        cell = $(row.insertCell(-1));
+        cell.html(inputLastca.val());
 
-    //Add calibration Deu cell.
-    cell = $(row.insertCell(-1));
-    cell.html(inputCaliDue.val());
+        //Add calibration Upto cell.
+        cell = $(row.insertCell(-1));
+        cell.html(inputCaliUpto.val());
 
-    //Add Remark cell.
-    cell = $(row.insertCell(-1));
-    cell.html(inputRemark.val());
+        //Add calibration Deu cell.
+        cell = $(row.insertCell(-1));
+        cell.html(inputCaliDue.val());
 
-    //Add Button cell.
-    // cell = $(row.insertCell(-1));
-    // var btnRemove = $("<input />");
-    // btnRemove.attr("type", "button");
-    // btnRemove.attr("onclick", "Remove(this);");
-    // btnRemove.val("Remove");
-    // cell.append(btnRemove);
+        //Add Remark cell.
+        cell = $(row.insertCell(-1));
+        cell.html(inputRemark.val());
 
-    //Clear the TextBoxes.
-    inputType.val("");
-    inputCode.val("");
-    inputDescription.val("");
-    inputHeigth.val("");
-    inputDi.val("");
-    inputLength.val("");
-    inputVolumn.val("");
-    inputLastca.val("");
-    inputCaliUpto.val("");
-    inputCaliDue.val("");
-    inputRemark.val("");
+        //Add Button cell.
+        // cell = $(row.insertCell(-1));
+        // var btnRemove = $("<input />");
+        // btnRemove.attr("type", "button");
+        // btnRemove.attr("onclick", "Remove(this);");
+        // btnRemove.val("Remove");
+        // cell.append(btnRemove);
+
+        //Clear the TextBoxes.
+        inputType.val("");
+        inputCode.val("");
+        inputDescription.val("");
+        inputHeigth.val("");
+        inputDi.val("");
+        inputLength.val("");
+        inputVolumn.val("");
+        inputLastca.val(new Date().toJSON().slice(0, 10));
+        inputCaliUpto.val(new Date().toJSON().slice(0, 10));
+        inputCaliDue.val(new Date().toJSON().slice(0, 10));
+        inputRemark.val("");
+    }
+    else {
+        alert("Fill data first")
+    }
 }
 
 
@@ -119,7 +154,7 @@ function Remove(button) {
     var name = $("TD", row).eq(0).html();
     if (confirm("Do you want to delete: " + name)) {
         //Get the reference of the Table.
-        var table = $("#tblCustomers")[0];
+        var table = $("#pipelineTable")[0];
 
         //Delete the Table row using it's Index.
         table.deleteRow(row[0].rowIndex);
@@ -127,48 +162,10 @@ function Remove(button) {
 };
 
 
-function addRow() {
-
-    newRowAdd =
-        '<tr><td><input type="text"></td><td><input type="text"></td ><td><input type = "text" ></td ><td><input type="text"></td> <td> <input type="text"></td> <td><input type="text"> </td><td><input type="number"> </td> <td><input type="date"></td> <td><input type="date"></td> <td><input type="date"></td> <td> <input type="text"></td></tr > ';
-
-    $('#m').append(newRowAdd);
-
-    console.log(document.getElementById('m').innerText);
-}
-
-$("#save").click(function () {
-    var json = html2json();
-});
-
-function html2json() {
-    var json = '{';
-    var otArr = [];
-
-    var tbl2 = $('table tbody tr').each(function (e) {
-        x = $(this).children();
-        var itArr = [];
-        x.each(function (e) {
-
-            var items = '';
-            if (e == 0) {
-                items += 'no : "' + $(this).val() + '"';
-
-            }
-            if (e == 1) {
-                items += 'name : "' + $(this).text() + '"';
-            }
-            if (e == 2) {
-                items += 'email : "' + $(this).text() + '"';
-            }
-
-            itArr.push(items);
-
-        });
-
-        otArr.push('"' + (e + 1) + '": {' + itArr.join(',') + '}');
-    })
-    json += otArr.join(",") + '}'
-    console.log(json);
-    return json;
+function ExportToExcel(type, fn, dl) {
+    var elt = document.getElementById('pipelineTable');
+    var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
+    return dl ?
+        XLSX.write(wb, { bookType: type, bookSST: true, type: 'base64' }) :
+        XLSX.writeFile(wb, fn || ('MySheetName.' + (type || 'xlsx')));
 }
