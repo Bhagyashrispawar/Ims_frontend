@@ -63,7 +63,6 @@
                 "name": "Unloading of Cargo document need to be filled",
                 "link": ""
             },
-       
             {
                 "name": "In case Manual Stock transfer from vehicle",
                 "link": ""
@@ -86,6 +85,42 @@
             }
         ]
     },
-    {"name":"master table"}
-    
+    {
+        "name": "Master Table",
+        "numberIndex": "fouth",
+        "items": [
+            {
+                "name": "Suplier master",
+                "link": ""
+            },
+            {
+                "name": "Product master",
+                "link": ""
+            },
+            {
+                "name": "Pump master",
+                "link": ""
+            },
+            {
+                "name": "Tank master",
+                "link": ""
+            },
+            {
+                "name": "User master",
+                "link": ""
+            },
+            {
+                "name": "Survey master",
+                "link": ""
+            },
+            {
+                "name": "Pipeline master",
+                "link": "/Mastertablemain/PipelinevolumnMain.html"
+            },
+            {
+                "name": "Tank Calibration master",
+                "link": ""
+            }
+        ]
+    }
 ]
