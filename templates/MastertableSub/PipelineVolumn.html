@@ -25,31 +25,84 @@
                             </div>
                         </div>
 
-                        <div class="tableData">
+                        <!-- Scrollable modal -->
 
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Understood</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tableData">
+                            <div class="d-flex gap-2 justify-content-end mb-3">
+                                <button data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-plus"
+                                        aria-hidden="true"></i>add</button>
+                            </div>
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th> Surveyor Code</th>
-                                        <th>Description</th>
-                                        <th class="w-25">Address</th>
-                                        <th>Contact No</th>
                                         <th>Type</th>
-                                        <th>Remark</th>
+                                        <th>Code</th>
+                                        <th class="w-25">pipeline_description</th>
+                                        <th>height in mtr</th>
+                                        <th>di in mtr</th>
+                                        <th>length <br>in meters </th>
+                                        <th>volume <br>in liters</th>
+                                        <th>last calibration</th>
+                                        <th>calibration <br>upto</th>
+                                        <th>calibration <br>due</th>
+                                        <th>remarks</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>1</td>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                        <td><select name="" id="">
-                                                <option value="">Insurance</option>
-                                                <option value="">Owner</option>
-                                                <option value="">Joint</option>
-                                            </select></td>
-                                        <td></td>
+                                        <td>
+                                            <input type="text">
+                                        </td>
+                                        <td>
+                                            <input type="text">
+
+                                        </td>
+                                        <td>
+                                            <input type="text">
+
+                                        </td>
+                                        <td>
+                                            <input type="text">
+
+                                        </td>
+                                        <td>
+                                            <input type="text">
+
+                                        </td>
+                                        <td>
+                                            <input type="text">
+                                        </td>
+                                        <td >
+                                            <input type="number">
+                                        </td>
+                                        <td><input type="date"></td>
+                                        <td><input type="date"></td>
+                                        <td><input type="date"></td>
+                                        <td>                                            <input type="text">
+                                        </td>
                                     </tr>
 
                                 </tbody>
