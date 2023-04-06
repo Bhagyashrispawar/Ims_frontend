@@ -91,27 +91,27 @@
         "items": [
             {
                 "name": "Suplier master",
-                "link": ""
+                "link": "/Mastertablemain/SupplierMasterMain.html"
             },
             {
                 "name": "Product master",
-                "link": ""
+                "link": "/Mastertablemain/ProductMasterMain.html"
             },
             {
                 "name": "Pump master",
-                "link": ""
+                "link": "/Mastertablemain/PumpMasterMain.html"
             },
             {
                 "name": "Tank master",
-                "link": ""
+                "link": "/Mastertablemain/TankMasterMain.html"
             },
             {
                 "name": "User master",
-                "link": ""
+                "link": "/Mastertablemain/UserMasterMain.html"
             },
             {
                 "name": "Survey master",
-                "link": ""
+                "link": "/Mastertablemain/SurveyMasterMain.html"
             },
             {
                 "name": "Pipeline master",
@@ -119,7 +119,7 @@
             },
             {
                 "name": "Tank Calibration master",
-                "link": ""
+                "link": "/Mastertablemain/TankCalibrationMasterMain.html"
             }
         ]
     }
