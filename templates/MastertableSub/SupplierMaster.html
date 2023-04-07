@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="./../../templates/MastertableSub/masterTable.css">
+<script src="./../../templates/MastertableSub/suppliermaster.js"></script>
 
 <main>
     <div class="container">
@@ -19,9 +20,9 @@
                             </div>
                             <div class="d-flex gap-2">
 
-                                <button id="download"> Report</button>
+                                <button id="download" id="download"> Report</button>
 
-                                <button>save</button>
+                                <button onclick="savedata()">save</button>
                             </div>
                         </div>
 
@@ -51,11 +52,11 @@
                         </div>-->
 
                         <div class="tableData">
-                            <div class="d-flex gap-2 justify-content-end mb-3">
-                                <button data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-plus"
-                                        aria-hidden="true"></i>add</button>
+                            <div class="d-flex px-2 justify-content-end mb-3">
+                                <button onclick="btnAdd()"><i class="fa fa-plus" aria-hidden="true"></i>add</button>
+                                <!-- <input type="button" value="Remove" onclick="Remove(this)"/> -->
                             </div>
-                            <table class="table table-bordered">
+                            <table class="table table-bordered"  id="supplierTable">
                                 <thead>
                                     <tr>
                                         <th>Supplier_name</th>
@@ -64,17 +65,18 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <tfoot>
                                     <tr>
                                         <td>
-                                            <input type="text">
+                                            <input type="text" id="supplier_name">
                                         </td>
                                         <td>
-                                            <input type="text">
+                                            <input type="text" id="supplier_details">
 
                                         </td>
                                         
                                     </tr>
-
+                                </tfoot>
                                 </tbody>
                             </table>
                         </div>
